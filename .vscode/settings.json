@@ -1,0 +1,8 @@
+{
+  "java.configuration.updateBuildConfiguration": "disabled",
+  "prettier.semi": false,
+  "prettier.useEditorConfig": false,
+  "prettier.trailingComma": "none",
+  "svelte.plugin.svelte.format.enable": false,
+  "prettier.endOfLine": "auto"
+}
