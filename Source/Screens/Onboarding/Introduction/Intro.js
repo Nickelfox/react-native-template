@@ -1,10 +1,6 @@
-import React, { useState } from "react"
-import { View } from "react-native"
+import React, { useState } from "react";
+import { View } from "react-native";
 
 export default Introduction = () => {
-  return (
-    <View>
-
-    </View>
-  )
-}
+  return <View></View>;
+};

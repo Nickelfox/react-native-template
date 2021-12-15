@@ -1,4 +1,4 @@
-import Actions from '../Actions/AppActions';
+import Actions from "../Actions/AppActions";
 
 let initialState = {
   user: {},
@@ -16,7 +16,7 @@ const AppReducer = (state = initialState, action) => {
       return {
         ...state,
         isLogged: false,
-        authToken: null,
+        authToken: null
       };
     case Actions.SET_TOKEN:
       return {

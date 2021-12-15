@@ -8,26 +8,22 @@ export default Splash = () => {
   const { isLogged } = useSelector(store => store.app);
 
   React.useEffect(() => {
-    checkForUserSession()
-  }, [])
+    checkForUserSession();
+  }, []);
 
   const checkForUserSession = () => {
     if (isLogged) {
       reset({
         index: 0,
-        routes:[{name: "Dashboard"}]
-      })
+        routes: [{ name: "Dashboard" }]
+      });
     } else {
       reset({
         index: 0,
-        routes:[{name: "Login"}]
-      })
+        routes: [{ name: "Login" }]
+      });
     }
-  }
+  };
 
-  return (
-    <View>
-
-    </View>
-  );
+  return <View></View>;
 };

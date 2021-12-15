@@ -1,24 +1,24 @@
-import React from 'react';
+import React from "react";
 import { Text } from "react-native";
-import { useTheme } from 'react-native-paper';
+import { useTheme } from "react-native-paper";
 
 const PText = ({
-  variant = 'body3',
+  variant = "body3",
   muted = false,
-  textAlign = 'auto',
+  textAlign = "auto",
   style = {},
   children,
   onPress = null,
   numberOfLines = 900000,
   onTextLayout,
-  ellipsizeMode = 'tail',
-  testID = '',
+  ellipsizeMode = "tail",
+  testID = "",
   bold = false,
   light = false,
   isWhite = false,
   textColor = "text"
 }) => {
-  const { fontStyle, colors } = useTheme()
+  const { fontStyle, colors } = useTheme();
 
   return (
     <Text
@@ -32,7 +32,7 @@ const PText = ({
         color: isWhite ? "#FFFFFF" : muted ? colors.muted : colors[textColor],
         textAlign: textAlign,
         fontFamily: bold ? "Lato-Bold" : light ? "Lato-Light" : "Lato-Regular",
-        ...style,
+        ...style
       }}>
       {children}
     </Text>

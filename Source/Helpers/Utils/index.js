@@ -1,4 +1,3 @@
-
 export const AppUtils = {
   mergeAndRemoveDuplicate: (data = [], selectedList = []) => {
     let hash = {};
@@ -12,8 +11,8 @@ export const AppUtils = {
     let newArr = [];
 
     for (let i in hash) {
-      newArr.push(hash[i])
+      newArr.push(hash[i]);
     }
-    return newArr
+    return newArr;
   }
-}
+};

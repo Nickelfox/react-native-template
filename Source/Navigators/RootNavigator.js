@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from "react";
 
 export const navigationRef = React.createRef();
 
@@ -9,4 +9,4 @@ export default RootNavigation = {
   reset: (index, name, params = {}) => {
     navigationRef.current?.reset({ index, routes: [{ name, params }] });
   }
-}
+};

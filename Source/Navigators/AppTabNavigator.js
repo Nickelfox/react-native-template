@@ -15,7 +15,7 @@ export function AppTabNavigator() {
   return (
     <Tab.Navigator
       barStyle={{
-        backgroundColor: colors.background,
+        backgroundColor: colors.background
       }}
       labeled={false}>
       <Tab.Screen
@@ -33,7 +33,7 @@ export function AppTabNavigator() {
               />
               {focused && <ActiveDot />}
             </React.Fragment>
-          ),
+          )
         }}
       />
 
@@ -52,7 +52,7 @@ export function AppTabNavigator() {
               />
               {focused && <ActiveDot />}
             </React.Fragment>
-          ),
+          )
         }}
       />
 
@@ -71,7 +71,7 @@ export function AppTabNavigator() {
               />
               {focused && <ActiveDot />}
             </React.Fragment>
-          ),
+          )
         }}
       />
     </Tab.Navigator>

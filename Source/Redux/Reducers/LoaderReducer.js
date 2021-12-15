@@ -1,19 +1,19 @@
-import Actions from '../Actions/LoaderActions';
+import Actions from "../Actions/LoaderActions";
 
 let initialState = {
-  visible: false,
+  visible: false
 };
 const LoaderReducer = (state = initialState, action) => {
   switch (action.type) {
     case Actions.SHOW:
       return {
         ...state,
-        visible: true,
+        visible: true
       };
     case Actions.HIDE:
       return {
         ...state,
-        visible: false,
+        visible: false
       };
     default:
       return state;
